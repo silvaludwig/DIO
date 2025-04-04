@@ -1,0 +1,34 @@
+O que são pacotes?
+- Módulos que podem ser instalados e utilizados em programas Python. Permite que utilize códigos que foram 
+escritos por outras pessoas, economizando tempo e esforço
+
+Pip
+- Gerenciador de pacotes do pyton. Permite instalar, atualizar e remover pacotes. 
+
+Ambiente virtual
+py -m venv myenv
+source myenv/bin/activate
+
+- Comandos Pip
+pip install
+pip unistall
+pip list
+pip install --upgrade
+
+- Pipenv
+gerenciamento de pacotes que combina gestão de dependências com criação de ambiente virtual. 
+Adiciona/remove pacotes automaticamente do arquivo Pipfile conforme instala e desinstala pacotes.
+
+py -m pipenv install -> instala os pacotes, criando um arquivo lock, ambiente virtual e tudo mais.
+py -m pipenv uninstall -> desinstala o pacote principal, removendo o pacote do arquivo lock
+py -m pipenv graph -> mostra todos os pacotes instalados e suas dependencias
+py -m pipenv clean -> limpa todos os pacotes "filhos" do pacote principal apos a desinstalação
+
+- Poetry
+Outra ferramenta de gerenciamento de dependencias para Python
+
+- Boas práticas
+Python tem ma serie de convenções que e boas práticas codiicadas em PEPs (Propostas de Melhoria Python)
+- PEP 8
+Guia de estilo pra codificação em Python. 
+4 espaços pra identação, limitar linhas a 79 caracteres, usar nomes de variveis em snake_case, e CamelCase pra classes

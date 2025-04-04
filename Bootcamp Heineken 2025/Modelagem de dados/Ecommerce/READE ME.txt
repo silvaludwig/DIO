@@ -1,0 +1,6 @@
+READ ME 
+Projeto de modelagem de dados e criação de diagrama de um Ecommerce.
+Fui seguindo o passo a passo da aula e fiz o refinamento de acordo com instruções.
+Algumas coisas eu n entendi muito bem, como, por exemplo, a questão de que "uma conta pode ser PJ ou PF, mas não as duas coisas".
+Isso não fez sentido pra mim, pq na tabela cliente já colocaríamos a identificação do cliente, que poderia ser CPF ou CNPJ. 
+Sendo que cada cliente só seria identificado pelo dado em questão, eu n entendi como seria aplicado esse refinamento ao projeto. 

@@ -1,0 +1,28 @@
+- O que é um banco de dados? 
+São coleções organizadas de dados, geralmente armazenados e acessados eletronicamente a partir de um sistema.
+
+- Tipos de BD
+Relacionais, não relacionais, orientados a objetos e outros. O mais comum é o Relacional, 
+que organiza os dados em tabelas. 
+
+- SGBD
+Software que interagem com usuário, outras aplicações e o próprio banco de dados pra capturar e analisar dados. 
+Muitas opções de SGBDs, os mais populares são MySQL, PostgreSQL, SQLite, Oracle Database, Microsoft SQL Server e 
+MariaDB.
+
+- BD Relacional
+Tipo de BD que organiza os dados em tabelas. Cada tabela é composta de linhas, que representam registros individuais, 
+e colunas que representam campos de dados. 
+
+- Tabelas em BD Relacional
+É uma estrutura que organiza os dados em linhas e colunas, como uma planilha. 
+Cada linha representa um registro distinto e cada coluna representa um tipo de informação, chamado de campo. 
+Por exemplo, uma tabela 'Clientes' pode ter campos como 'ID', 'Nome', 'email' e 'telefone'.
+
+- Chaves primárias
+Cada tabela em um banco de dados relacional deve ter uma chave primária (primary key). É uma coluna (ou conjunto de colunas)
+cujo valor é único pra cada registro. Isso garante que cada regustro possa ser identificado de maneira única. 
+No exemplo da tabela 'Clientes', o campo 'ID' pode ser a chave primaria. Garante a unicidade dos registros. 
+
+
+-DBAPI

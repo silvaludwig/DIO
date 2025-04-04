@@ -1,0 +1,34 @@
+- Desenvolvimento WEB
+Refere-se ao processo de criação de websites e aplicações para internet ou uma intranet.
+Abrange uma gama de tarefas, incluindo webdesign, programação web, gestao de db.
+
+- Front end
+parte do website que o usuário interage diretamente. 
+
+- backend
+onde ocorre o processamento dos dados, gerenciamento de banco de dados e controle de servidor
+envolve linguagens como python, java, php e etc 
+
+- API RESTful
+Refere-se a APIs que seguem os princípios do REST (Representional State Transfer).
+São baseadas em padrões HTTP e utilizadas para interações WEB
+Uso dos metodos HTTP: GET POST PUT DELETE
+
+- API SOAP
+Simple Object Access Protocol, baseado em XML
+independente de linguagem e plataforma de transporte 
+suporte pra operações complexas e segurança avançada
+
+- API GraphQL
+linguagem de consulta para API, e um servidor capaz de executar essas consultas.
+retornando apenas os dados especificados. 
+permite especificação 
+eficiente 
+flexivel e fortemente tipado 
+
+- Verbos HTTP
+CRUD = CREATE READ UPDATE DELETE 
+GET - leitura
+POST - criação
+PUT/PATCH - atualização
+DELETE - apagar 
