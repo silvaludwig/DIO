@@ -1,0 +1,17 @@
+FastAPI
+- foi criado por Sebastian Ramirez 
+- lançado em dezembro de 2018
+- tipagem estática 
+
+Pontos positivos
+- alto desempenho 
+- geração de documentação automática
+- validação de dados e serialização
+- facilidade de uso 
+- suporte async/await
+
+Pontos negativos
+- comunidade menor 
+- maturidade
+- complexidade em projetos grandes
+- sem padronização 
