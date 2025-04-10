@@ -4,12 +4,18 @@ from datetime import datetime, UTC
 
 app = FastAPI()
 
+fake_db = [
+    {'title': 'Creating an application using Django', 'date': datetime.now(UTC), 'published': True},
+    {'title': 'Creating an application using Flask', 'date': datetime.now(UTC), 'published': True},
+    {'title': 'Creating an application using FastAPI', 'date': datetime.now(UTC), 'published': True},
+    {'title': 'Creating an application using Starlett', 'date': datetime.now(UTC), 'published': False},
+]
+
+@app.get('/posts')
+def read_posts(published: bool, skip: int = 0, limit: int = len(fake_db)):
+    return [post for post in fake_db[skip: skip + limit] if post['published'] is published]
+
 
 @app.get('/posts/{framework}')
-def read_posts(framework: str):
-    return {
-        "posts": [
-            {'title': f'Creating an application using {framework}', 'date': datetime.now(UTC)},
-            {'title': f'Internationalizing an application using {framework}', 'date': datetime.now(UTC)},
-        ]
-    }
+def read_framework_posts(framework: str):
+    return ...
