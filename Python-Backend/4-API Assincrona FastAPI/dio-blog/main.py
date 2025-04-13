@@ -1,4 +1,5 @@
-from fastapi import FastAPI, status
+from typing import Annotated
+from fastapi import Cookie, FastAPI, Header, Response, status
 from datetime import datetime, UTC
 from pydantic import BaseModel
 
@@ -26,7 +27,17 @@ def create_post(post: Post):
 
 
 @app.get('/posts/')
-def read_posts(published: bool, limit: int, skip: int = 0):
+def read_posts(
+    response: Response,
+    published: bool, 
+    limit: int, 
+    skip: int = 0,
+    ads_id: Annotated[str | None, Cookie()] = None,
+    user_agent: Annotated[str | None, Header()] = None,
+):
+    response.set_cookie(key="user", value="user@email.com")
+    print(f"Cookie: {ads_id}")
+    print(f"User-Agent: {user_agent}")
     return [post for post in fake_db[skip: skip + limit] if post['published'] is published]
 
 
